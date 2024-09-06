@@ -1,3 +1,4 @@
+import 'package:first_project/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,18 +6,20 @@ void main() {
 }
 
 class TauqeerApp extends StatelessWidget {
-  const TauqeerApp({super.key});
+  int days = 30;
+  String first_name = "Codepur";
+  String last_name = "Ahmad";
+  double floor = 8.12;
+  bool isMale = true;
+  num take = 12;
+  // it takes both int and double so num are used
+  var day = "tauqeer";
+  final pi = 3.14; 
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("tauqer ahmad"),
-          ),
-        ),
-      ),
+      home:HomePage(),
     );
   }
 }
