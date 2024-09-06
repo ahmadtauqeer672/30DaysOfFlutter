@@ -1,4 +1,5 @@
-import 'package:first_project/home_page.dart';
+import 'package:first_project/pages/home_page.dart';
+import 'package:first_project/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +20,21 @@ class TauqeerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:HomePage(),
+      // home:HomePage(),
+      themeMode:  ThemeMode.light,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark
+
+      ),
+      initialRoute: "/home",
+  
+    routes:{
+      "/":(context) => LoginPage(),
+      "/home":(context)=>HomePage(),
+      "/login":(context)=>LoginPage()
+    }
+ 
+
     );
   }
 }
