@@ -1,3 +1,4 @@
+import 'package:first_project/utilities/routes.dart';
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
@@ -42,7 +43,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      print("hello mr tauqeer ahmad");
+                      Navigator.pushNamed(context, MyRoutes.homeRoute);
                     },
                     child: Text("Login"),
                     style: TextButton.styleFrom(),

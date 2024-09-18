@@ -1,5 +1,7 @@
 import 'package:first_project/pages/home_page.dart';
 import 'package:first_project/pages/login_page.dart';
+import 'package:first_project/pages/responsive.dart';
+import 'package:first_project/utilities/routes.dart';
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
@@ -17,8 +19,10 @@ class TauqeerApp extends StatelessWidget {
   // it takes both int and double so num are used
   var day = "tauqeer";
   final pi = 3.14; 
+  
 
   @override
+  
   Widget build(BuildContext context) {
     return MaterialApp(
       
@@ -28,9 +32,13 @@ class TauqeerApp extends StatelessWidget {
       // initialRoute: "/",
   
     routes:{
+      
       "/":(context) => LoginPage(),
+      MyRoutes.loginRoute:(context)=>LoginPage(),
+      
       "/home":(context)=>HomePage(),
-      "/login":(context)=>LoginPage()
+      "/login":(context)=>LoginPage(),
+      
     }
  
 
